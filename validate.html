@@ -5,9 +5,9 @@
     </title>
     <style>
         .signup{
-            border:1px solid #999999;
-            font: normal 14px helvetica;
-            color: #444444;
+            border:1px solid #000000;
+            font: normal 30px times;
+            color: #000000;
         }
     </style>
     <script>
@@ -29,8 +29,36 @@
 </head>
 <body>
     <table class="signup" border="0" cellpadding="2" 
-        cellspacing="5" bgcolor="#eeeeee">
-    <th colspan="2" align="center">Sign Up Form</th>
-    <form method="post" action=""
+        cellspacing="5" bgcolor="#fcff4d" align="center">
+    <th colspan="2" align="center">Sign Up</th>
+    <form method="post" action="adduser.php" onsubmit="return validate(this)">
+            <tr>
+                <td>Forename</td>
+                <td><input type="text" maxlength="32" name="forename" style="font-size: medium;"></td>
+            </tr>
+            <tr>
+                <td>Surname</td>
+                <td><input type="text" maxlength="32" name="surname" style="font-size: medium;"></td>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" maxlength="16" name="username" style="font-size: medium;"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="text" maxlength="12" name="password" style="font-size: medium;"></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="text" maxlength="3" name="age" style="font-size: medium;"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" maxlength="64" name="email" style="font-size: medium;"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="sign up" style="font-size: large;"></td>
+            </tr>
+        </form>
     </table>
 </body>
