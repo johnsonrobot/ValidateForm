@@ -30,7 +30,7 @@ function validatePassword($field){
 function validateAge($field){
     if($field == ""){
         return "No Age was entered.\n";
-    }else if($field < 130 && $field > 0){
+    }else if($field > 130 || $field < 0){
         return "Please input correct age.\n";
     }else{
         return "";
